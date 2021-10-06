@@ -1,6 +1,8 @@
 import 'package:deadshot/screens/sign_up.dart';
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
+
 class LoginScreen extends StatefulWidget {
    static final String id='login_screen';
    @override
@@ -17,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children:<Widget>[
               SizedBox(height:12,), 
               Text(
-                'Instagram',
+                'Instasec',
                 style:TextStyle(
                   color:Colors.black,
                   fontFamily: 'Billabong',
@@ -63,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: Colors.blueAccent[700],
                 child: TextButton(
                   onPressed: (){
-                    //Navigator.pushNamed(context , routename )
+                    Navigator.pushNamed(context , Home.id );
                   },
                   child: Text(
                     'Login',

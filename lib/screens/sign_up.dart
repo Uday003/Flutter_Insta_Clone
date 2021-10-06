@@ -20,7 +20,7 @@ class _SignupScreenState extends State<SignupScreen> {
             children:<Widget>[
               SizedBox(height:20.0),
               Text(
-                'Instagram',
+                'Instasec',
                 style:TextStyle(
                   color:Colors.black,
                   fontFamily: 'Billabong',
@@ -44,7 +44,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ],
                 ),
               ),
-              
+              SizedBox(height:10,),
                Container(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -60,7 +60,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ],
                 ),
               ),
-              
+              SizedBox(height:10,),
               Container(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -76,7 +76,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ],
                 ),
               ),
-              
+              SizedBox(height:10,),
               Container(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -96,7 +96,7 @@ class _SignupScreenState extends State<SignupScreen> {
               Container(
                 width: 250.0,
                 color: Colors.blueAccent[700],
-                child: OutlinedButton(
+                child: TextButton(
                   onPressed: (){},
                   child: Text(
                     'Sign up',
@@ -106,11 +106,11 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   ),
               ),
-              SizedBox(height:10,),
+              SizedBox(height:20,),
               Container(
                 width: 250.0,
                 color: Colors.blueAccent[700],
-                child: OutlinedButton(
+                child: TextButton(
                   onPressed: (){
                     Navigator.pushNamed(context , LoginScreen.id );
                   },
